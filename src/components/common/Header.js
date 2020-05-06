@@ -5,14 +5,14 @@ import logo from '../../assets/logo.jpeg';
 import styles from '../Styles/Header.css';
 
 export const Header = () => {
-  const history = useHistory()
+  const history = useHistory();
 
   const handleClick = () => history.push('/');
 
   return (
     <section className={styles.header}>
       <div className={styles.navLinks}>
-        <NavLink to='/about'>About</NavLink>
+        <NavLink to='/about' activeStyle={{ backgroundColor: 'white' }}>About</NavLink>
         <NavLink to='/'>Book of Spells</NavLink>
         <NavLink to='/'>Shop</NavLink>
       </div>
@@ -21,7 +21,7 @@ export const Header = () => {
         <img src={logo} />
       </div>
       <div className={styles.navLinks}>
-        <NavLink to='/'>Blog</NavLink>
+        <NavLink to='/blog' activeStyle={{ backgroundColor: 'white' }}>Blog</NavLink>
         <NavLink to='/'>Videos</NavLink>
         <NavLink to='/'>Contact</NavLink>
       </div>

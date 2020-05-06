@@ -13,3 +13,9 @@ h2 {
 p {
   font-family: 'Noto Serif JP';
 }
+
+a {
+  color: black;
+  font-family: 'Noto Serif JP';
+  text-decoration: none;
+}
