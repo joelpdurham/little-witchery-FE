@@ -1,6 +1,7 @@
 .featured {
 
   img {
-    max-width: 200px;
+    max-height: 300px;
+    margin: 10px;
   }
 }
