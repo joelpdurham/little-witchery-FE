@@ -19,3 +19,7 @@ a {
   font-family: 'Noto Serif JP';
   text-decoration: none;
 }
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   max-width: 800px;
   align-items: center;
   margin: 0 auto;
@@ -15,6 +15,17 @@
     text-align: center;
 }
 
+.title {
+  margin: 5px 0px -15px;
+  font-size: 64px;
+  cursor: pointer;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .navLinks {
   width: 300px;
   display: flex;
@@ -24,19 +35,5 @@
 
 .logo {
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 200px;
-
-  h1 {
-    margin-bottom: 0px;
-  }
-
-  img {
-    border: solid 1px black;
-    border-radius: 100%;
-    max-width: 150px;
-    padding: 10px 0px;
-  }
+  max-width: 150px;
 }
