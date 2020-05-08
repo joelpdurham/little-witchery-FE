@@ -5,6 +5,7 @@ import {
   Switch 
 } from 'react-router-dom';
 
+import { Socials } from './common/Socials';
 import { Header } from './common/Header';
 import { LandingPage } from './LandingPage';
 import { Footer } from './common/Footer';
@@ -17,11 +18,12 @@ import { Blog } from './Blog';
 import { Videos } from './Videos';
 import { Contact } from './Contact';
 
-import './Styles/App.css';
+import styles from './Styles/App.css';
 
 export default function App() {
   return (
     <Router>
+      <Socials />
       <Header />
       <Route exact path='/' component={LandingPage} />
       <Route exact path='/about' component={About} />
