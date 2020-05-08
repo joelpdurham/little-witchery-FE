@@ -6,6 +6,7 @@ export const About = () => {
       <h1>About</h1>
       <p>Little Witchery is ...</p>
       <img style={{ width: '400px' }}src='https://filmschoolrejects.com/wp-content/uploads/2019/07/kikis-2-1280x720.jpg' />
+      <p></p>
     </section>
   );
 };

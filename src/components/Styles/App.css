@@ -3,6 +3,7 @@
 body {
   background-color: white;
   margin: 10px;
+  min-height: 97vh;
 }
 
 h1 {
