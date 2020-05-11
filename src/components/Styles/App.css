@@ -15,10 +15,20 @@ h2 {
   font-family: 'Amatic SC';
   font-weight: 100;
   font-size: 28px;
+  margin-bottom: 10px
+}
+
+h3 {
+  font-family: 'Amatic SC';
+  font-weight: 100;
+  font-size: 24px;
+  margin: 20px 0px 5px 0px;
+  text-align: start;
 }
 
 p {
   font-family: 'Noto Serif JP';
+  margin: 5px 0px
 }
 
 a {
@@ -30,4 +40,32 @@ a {
 a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-left: 75px;
+}
+li {
+    text-align: start;
+    padding-left: 25px;
+    position: relative;
+    font-family: 'Noto Serif JP';
+}
+
+li:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-image: url('../../assets/starpoint.png');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 12px;
+    transform: translateY(-50%);
 }
