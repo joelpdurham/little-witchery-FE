@@ -21,7 +21,10 @@ export const Videos = () => {
   const [currentVideo, setCurrentVideo] = useState(videoLinkArray[0].url);
 
   const allVideos = videoLinkArray.map(video => (
-    <img onClick={() => setCurrentVideo(video.url)} key={video.url} width='200' src={video.thumbnail} />
+    <img 
+      onClick={() => setCurrentVideo(video.url)} 
+      className={ currentVideo === video.url ? styles.selected : ''}
+      key={video.url} width='200' src={video.thumbnail}/>
   ));
   
   return (
